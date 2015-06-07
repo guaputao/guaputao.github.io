@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Little by little</title>
+  <title>ajax解决跨域问题 | Little by little</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Little by little">
-<meta property="og:url" content="http://guaputao.github.io/index.html">
+  <meta name="description" content="什么是跨域问题？概念：只要协议、域名、端口有任何一个不同，都被当作是不同的域。123456789101112131415161718192021222324URL                                        说明                   是否允许通信http://www.a.com/a.jshttp://www.a.com/b.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ajax解决跨域问题">
+<meta property="og:url" content="http://guaputao.github.io/2015/06/08/ajax/index.html">
 <meta property="og:site_name" content="Little by little">
-<meta property="og:description">
+<meta property="og:description" content="什么是跨域问题？概念：只要协议、域名、端口有任何一个不同，都被当作是不同的域。123456789101112131415161718192021222324URL                                        说明                   是否允许通信http://www.a.com/a.jshttp://www.a.com/b.js">
+<meta property="og:updated_time" content="2015-06-07T16:26:55.822Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Little by little">
-<meta name="twitter:description">
+<meta name="twitter:title" content="ajax解决跨域问题">
+<meta name="twitter:description" content="什么是跨域问题？概念：只要协议、域名、端口有任何一个不同，都被当作是不同的域。123456789101112131415161718192021222324URL                                        说明                   是否允许通信http://www.a.com/a.jshttp://www.a.com/b.js">
   
     <link rel="alternative" href="/atom.xml" title="Little by little" type="application/atom+xml">
   
@@ -175,9 +176,7 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-ajax" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-ajax" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/06/08/ajax/" class="article-date">
@@ -193,12 +192,27 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/08/ajax/">ajax解决跨域问题</a>
+    <h1 class="article-title" itemprop="name">
+      ajax解决跨域问题
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/技术/">技术</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -219,90 +233,59 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/06/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo搭建博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
-
-  
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/06/08/hello-world/" class="article-date">
-  	<time datetime="2015-06-07T16:16:12.478Z" itemprop="datePublished">2015-06-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/06/08/hello-world/">Hexo搭建博客</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="搭建步骤">搭建步骤</h2><p>详细步骤请参考： <a href="http://cnfeat.com/2014/05/10/2014-05-11-how-to-build-a-blog/" target="_blank" rel="external">Writing</a></p>
-<h2 id="注意事项">注意事项</h2><p>1.部署到Github前需要配置hexo文件下的_config.yml文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy: //*注意deploy下面的文字都要缩进两个空格，每个冒号后面都要有一个空格，每句结尾也要有一个空格*</span><br><span class="line">  <span class="built_in">type</span>: git </span><br><span class="line">  repo: git@github.com:guaputao/guaputao.github.io.git </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>2.新版的hexo在部署的时候，需要提前安装以下插件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>3.Yilia主题下添加<strong>多说</strong>评论插件<br>首先去多说官网申请一个多说项目<br>其次需要在Yilia主题文件下的<strong>config.yml文件中添加</strong>duoshuo_shortname: guaputao,其中”guaputao”为多说中基本设置的名称<br>随后在\hexo\themes\yilia\layout_partial目录下的article.ejs文件中加入如下代码(要删除文件中还有评论的代码，才能加入这段代码，否则会出现多个评论框)：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; theme.duoshuo_shortname)&#123; %&gt;</span><br><span class="line">&lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">  &lt;!-- 多说评论框 start --&gt;</span><br><span class="line">  &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> data-title=<span class="string">"&lt;%= post.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">  &lt;!-- 多说评论框 end --&gt;</span><br><span class="line">  &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">  &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">  var duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= theme.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">    (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">      var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">      ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">      ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">      ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">      (document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">       || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">    &#125;)();</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">&lt;/section&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/技术/">技术</a>
-	</div>
-
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-  
-  
-  
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
 </div>
+
+
+  
+  <section id="comments">
+    <!-- ��˵���ۿ� start -->
+    <div class="ds-thread" data-thread-key="post-ajax" data-title="ajax解决跨域问题" data-url="http://guaputao.github.io/2015/06/08/ajax/"></div>
+    <!-- ��˵���ۿ� end -->
+    <!-- ��˵����JS���� start (һ����ҳֻ������һ��) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'guaputao'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- ��˵����JS���� end -->
+  </section>
+  </div>
       <footer id="footer">
   <div class="outer">
     <div id="footer-info">
